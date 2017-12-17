@@ -1,7 +1,7 @@
 {
   "name": "simple-rating-stars",
-  "version": "0.0.2",
-  "description": "generate simple star-ratings in React",
+  "version": "0.0.3",
+  "description": "generate simple display-only star-ratings in React",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,9 @@
     "build": "webpack"
   },
   "keywords": ["ratings", "star", "stars", "react"],
-  "author": "RLBrown72@gmail.com",
+  "author": "RLBrown <RLBrown72@gmail.com>",
+  "homepage": "https://github.com/shoesandsocks/simple-rating-stars",
+  "bugs": "https://github.com/shoesandsocks/simple-rating-stars/issues",
   "license": "ISC",
   "peerDependencies": {
     "react": "^16.2.0"
