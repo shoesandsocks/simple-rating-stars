@@ -1,13 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const regex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+const hexRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+const intRegex = /^\d+$/;
 
 const Star = ({
   stars, outOf, full, empty, stroke,
 }) => {
+  if (!intRegex.test(stars)) {
+    return 'Error: This component cannot handle fractions of stars.';
+  }
   if (stars > outOf) {
     return 'Error: "stars" cannot exceed "outOf."';
+  }
+  if (stars < 0) {
+    return 'Error: "stars" cannot be less-than-zero.';
+  }
+  if (outOf < 2) {
+    return '"outOf" cannot be less than two. What are we even measuring here?';
   }
 
   const arr = Array(outOf).fill(0);
@@ -29,21 +39,19 @@ const Star = ({
 };
 
 const hexPropType = (props, propName, componentName) =>
-  (regex.test(props[propName])
+  (hexRegex.test(props[propName])
     ? null
     : new Error(`Invalid prop \`${propName}\` supplied to \`${componentName}\`. Validation failed.`));
 
 Star.propTypes = {
-  stars: PropTypes.number,
-  outOf: PropTypes.number,
+  stars: PropTypes.number.isRequired,
+  outOf: PropTypes.number.isRequired,
   full: hexPropType,
   empty: hexPropType,
   stroke: hexPropType,
 };
 
 Star.defaultProps = {
-  stars: 4,
-  outOf: 5,
   full: 'orange',
   empty: 'white',
   stroke: 'black',
