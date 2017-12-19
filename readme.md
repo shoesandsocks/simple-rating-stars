@@ -1,5 +1,7 @@
 ## Simple Rating Stars
 
+[![Known Vulnerabilities](https://snyk.io/test/github/shoesandsocks/simple-rating-stars/badge.svg)](https://snyk.io/test/github/shoesandsocks/simple-rating-stars)
+
 A display-only React component to render basic star-ratings.
 
 ### Install
@@ -40,5 +42,5 @@ Most errors are caught by the component's propTypes. Certain logical errors (req
 
 ### Notes
 
-* The SVG stars are mapped out using `Array.prototype.map`; array indexes are used as React 'key`s. This is a poor practice, but I have yet to write a test that surfaces errors, even while adding and removing stars in a dynamic React app.
+* The SVG stars are mapped out using `Array.prototype.map`; array indexes are used as React 'key`s. This is a poor practice, but I have yet to write a test that surfaces errors based on this anti-pattern, even while adding and removing stars in a dynamic React app.
 * That said, I still need to integrate testing and a small test app into the package.
