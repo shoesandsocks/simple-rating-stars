@@ -17,7 +17,7 @@ const Star = ({
     return 'Error: "stars" cannot be less-than-zero.';
   }
   if (outOf < 2) {
-    return '"outOf" cannot be less than two. What are we even measuring here?';
+    return 'Error: "outOf" cannot be less than two.';
   }
 
   const arr = Array(outOf).fill(0);

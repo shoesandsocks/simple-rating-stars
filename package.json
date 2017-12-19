@@ -1,6 +1,6 @@
 {
   "name": "simple-rating-stars",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "generate simple display-only star-ratings in React",
   "main": "build/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "webpack --watch",
     "build": "webpack"
   },
-  "keywords": ["ratings", "star", "stars", "react"],
+  "keywords": ["ratings", "star", "stars", "react", "SVG"],
   "author": "RLBrown <RLBrown72@gmail.com>",
   "homepage": "https://github.com/shoesandsocks/simple-rating-stars",
   "bugs": "https://github.com/shoesandsocks/simple-rating-stars/issues",

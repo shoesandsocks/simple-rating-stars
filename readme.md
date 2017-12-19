@@ -37,3 +37,8 @@ const SomeStars = () => (
 ### Errors
 
 Most errors are caught by the component's propTypes. Certain logical errors (requesting "5 stars out of 3"; setting the maximum `outOf` to a number less than 2) will return a string message in the app. Incorrect hexadecimal color values will throw Errors in the browser console and the component's defaultProps colors (orange, black, white) will be substituted as explained above.
+
+### Notes
+
+* The SVG stars are mapped out using `Array.prototype.map`; array indexes are used as React 'key`s. This is a poor practice, but I have yet to write a test that surfaces errors, even while adding and removing stars in a dynamic React app.
+* That said, I still need to integrate testing and a small test app into the package.
