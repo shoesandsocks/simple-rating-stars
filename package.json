@@ -1,6 +1,6 @@
 {
   "name": "simple-rating-stars",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "generate simple display-only star-ratings in React",
   "main": "build/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "author": "RLBrown <RLBrown72@gmail.com>",
   "homepage": "https://github.com/shoesandsocks/simple-rating-stars",
   "bugs": "https://github.com/shoesandsocks/simple-rating-stars/issues",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "react": "^16.2.0"
   },
