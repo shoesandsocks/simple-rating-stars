@@ -4,6 +4,9 @@
 
 A display-only React component to render basic star-ratings, using SVG elements.
 
+### In Action
+[![Edit simple-rating-stars test](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/6qzzq7v5r)
+
 ### Install
 
 `npm install simple-rating-stars`
