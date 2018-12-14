@@ -1,6 +1,6 @@
 {
   "name": "simple-rating-stars",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generate simple display-only star-ratings in React",
   "main": "build/index.js",
   "scripts": {

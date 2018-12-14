@@ -1,19 +1,20 @@
-## Simple Rating Stars
+# Simple Rating Stars
 
 [![Known Vulnerabilities](https://snyk.io/test/github/shoesandsocks/simple-rating-stars/badge.svg)](https://snyk.io/test/github/shoesandsocks/simple-rating-stars)
 
 A display-only React component to render basic star-ratings, using SVG elements.
 
-### In Action
+## In Action
+
 [![Edit simple-rating-stars test](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/6qzzq7v5r)
 
-### Install
+## Install
 
 `npm install simple-rating-stars`
 
 ### Usage
 
-```
+```javascript
 import Stars from 'simple-rating-stars';
 
 const SomeStars = () => (
