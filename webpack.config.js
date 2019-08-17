@@ -1,5 +1,7 @@
-var path = require('path');
+const path = require('path');
+
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -15,7 +17,8 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env'],
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-transform-react-jsx', '@babel/plugin-proposal-object-rest-spread'],
           },
         },
       },

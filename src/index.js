@@ -1,6 +1,7 @@
 /* eslint-disable no-bitwise, prefer-rest-params, no-extend-native, no-plusplus */
 import React from 'react';
 import PropTypes from 'prop-types';
+// import '@babel/polyfill';
 
 const hexRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
 const intRegex = /^\d+$/;
