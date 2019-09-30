@@ -1,6 +1,6 @@
 {
   "name": "simple-rating-stars",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "generate simple display-only star-ratings in React",
   "repository": {
     "type": "git",
