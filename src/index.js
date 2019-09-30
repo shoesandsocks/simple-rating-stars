@@ -39,13 +39,13 @@ const Star = ({
   stars, outOf, full, empty, stroke,
 }) => {
   if (!intRegex.test(stars)) {
+    if (stars < 0) {
+      return 'Error: "stars" cannot be less-than-zero.';
+    }
     return 'Error: This component cannot handle fractions of stars.';
   }
   if (stars > outOf) {
     return 'Error: "stars" cannot exceed "outOf."';
-  }
-  if (stars < 0) {
-    return 'Error: "stars" cannot be less-than-zero.';
   }
   if (outOf < 2) {
     return 'Error: "outOf" cannot be less than two.';
@@ -58,6 +58,7 @@ const Star = ({
       key={i} // eslint-disable-line
       xmlns="http://www.w3.org/2000/svg"
       fill={a === 0 ? full : empty}
+      title={a === 0 ? `Filled Star ${i + 1}` : 'Empty Star'}
       stroke={stroke}
       width="24"
       height="24"
