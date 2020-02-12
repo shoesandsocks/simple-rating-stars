@@ -1,7 +1,7 @@
 {
   "name": "simple-rating-stars",
-  "version": "1.4.1",
-  "description": "generate simple display-only star-ratings in React",
+  "version": "1.4.2",
+  "description": "Component that generates simple display-only star-ratings in React",
   "repository": {
     "type": "git",
     "url": "git://github.com/shoesandsocks/simple-rating-stars.git"
@@ -19,7 +19,7 @@
     "react",
     "SVG"
   ],
-  "author": "RLBrown <RLBrown72@gmail.com>",
+  "author": "RL Brown <rich@pineandvine.com>",
   "homepage": "https://github.com/shoesandsocks/simple-rating-stars",
   "bugs": "https://github.com/shoesandsocks/simple-rating-stars/issues",
   "license": "MIT",
