@@ -1,6 +1,6 @@
 {
   "name": "simple-rating-stars",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Component that generates simple display-only star-ratings in React",
   "repository": {
     "type": "git",
@@ -39,12 +39,12 @@
     "@babel/preset-env": "^7.8.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^26.0.1",
     "babel-loader": "^8.0.6",
     "core-js": "^3.6.4",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.18.0",
-    "jest": "^24.9.0",
+    "jest": "^26.0.1",
     "react-dom": "^16.12.0"
   }
 }
