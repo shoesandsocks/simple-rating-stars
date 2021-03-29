@@ -29,7 +29,7 @@
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
-    "webpack": "^5.24.3",
+    "webpack": "^5.24.4",
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
